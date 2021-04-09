@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8" />
+    <title>Report</title>
+    <link rel="stylesheet" href="../static/styles/main.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="page-container">
+        <div class="heading-container">
+            <h1 class="heading">COVID-19 Contact Tracing</h1>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/overview">Overview</a></li>
+                <li><a href="/add-visit">Add Visit</a></li>
+                <li class="selected"><a href="/report">Report</a></li>
+                <li><a href="/settings">Settings</a></li>
+                <li class="end"><a href="/api/logout">Logout</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="section-heading-container">
+                <h2 class="section-heading">Report an Infection</h2>
+            </div>
+            <form id="infection-report-form">
+                <p class="instruction">
+                    Please report the date and time when you were tested positive for COVID 19.
+                </p>
+                <div class="input-container">
+                    <input required type="date" name="infection-date" class="input-box" />
+                    <input required type="time" name="infection-time" class="input-box" />
+                </div>
+                <div class="button-container">
+                    <button id="report-btn" class="btn" type="submit">Report</button>
+                    <button id="cancel-btn" class="btn" type="reset">Cancel</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="../static/request.js"></script>
+    <script src="../static/utils.js"></script>
+    <script src="../static/notification.js"></script>
+    <script src="report.js"></script>
+    
+</body>
+</html>

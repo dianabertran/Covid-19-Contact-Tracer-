@@ -1,0 +1,43 @@
+﻿.home-page {
+    display: grid;
+    min-height: 0;
+    padding: 0.75rem 0;
+    column-gap: 2.25rem;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1.5fr auto;
+    grid-template-areas:
+        'status map'
+        'instruction map';
+}
+
+img.map {
+    min-height: 0;
+}
+
+.visit-marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.heading-container {
+    grid-area: heading;
+}
+
+.map-container {
+    position: relative;
+    grid-area: map;
+}
+
+.status-text {
+    grid-area: status;
+    margin: 0;
+}
+
+.instruction-text {
+    grid-area: instruction;
+}
+
+nav.navbar {
+    grid-area: nav;
+}

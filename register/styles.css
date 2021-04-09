@@ -1,0 +1,40 @@
+﻿.registration-form {
+    display: grid;
+    width: 50%;
+    row-gap: 0.5rem;
+    grid-template-areas:
+        'name-field'
+        'surname-field'
+        'username-field'
+        'password-field'
+        '.'
+        'register-btn';
+    grid-template-rows: repeat(5, 2.5rem);
+}
+
+.registration-form-container {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input.name-field {
+    grid-area: name-field;
+}
+
+input.surname-field {
+    grid-area: surname-field;
+}
+
+input.username-field {
+    grid-area: username-field;
+}
+
+input.password-field {
+    grid-area: password-field;
+}
+
+button.register-btn {
+    grid-area: register-btn;
+}

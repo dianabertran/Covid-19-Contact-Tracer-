@@ -1,0 +1,41 @@
+﻿form#add-visit-form {
+    display: grid;
+    grid-template-areas:
+    'inputs map'
+    'actions map';
+    padding: 1rem 0 1rem 0;
+    min-height: 0;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 2fr auto;
+    column-gap: 1.5rem;
+}
+
+.input-container {
+    display: grid;
+    grid-area: inputs;
+    row-gap: 1rem;
+    grid-template-rows: repeat(3, 2rem);
+}
+
+.action-container {
+    display: grid;
+    grid-area: actions;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 1rem;
+}
+
+.location-map-container {
+    grid-area: map;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .location-map-container > #location-marker {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .location-map-container > div {
+        min-width: 0;
+        width: min-content;
+    }

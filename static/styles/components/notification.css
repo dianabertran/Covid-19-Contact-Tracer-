@@ -1,0 +1,65 @@
+﻿.notification-active {
+    animation: animation_start 200ms ease-out;
+}
+
+.notification-dismissed {
+    animation: animation_end 200ms ease-out;
+}
+
+.notification {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    padding: 0 1rem;
+    background-color: var(--select-color);
+}
+
+.notification-header {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.notification-content {
+    font-size: 1em;
+}
+
+.notification-success {
+    background-color: var(--success-color);
+}
+
+.notification-error {
+    background-color: var(--error-color);
+}
+
+    .notification-success > .notification-header,
+    .notification-success > .notification-content,
+
+    .notification-error > .notification-header,
+    .notification-error > .notification-content {
+        color: rgb(145, 141, 141);
+    }
+
+
+@keyframes animation_start {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animation_end {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}

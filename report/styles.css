@@ -1,0 +1,23 @@
+﻿form#infection-report-form {
+    padding-top: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+    form#infection-report-form .button-container {
+        width: 50%;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    form#infection-report-form .input-container {
+        display: grid;
+        width: 50%;
+        row-gap: 0.5rem;
+        grid-template-rows: repeat(2, 3rem);
+        grid-template-columns: 1.5fr;
+        padding-top: 3rem;
+    }
+    form#infection-report-form .instruction {
+        text-align: center;
+    }

@@ -1,0 +1,29 @@
+﻿nav.navbar {
+    
+    background-color: var(--main-color);
+    height: 100%;
+}
+
+    nav.navbar > ul {
+        margin: 0;
+        height: 100%;
+        padding: 0;
+
+    }
+        nav.navbar > ul > li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            nav.navbar > ul > li > a {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 24px;
+                text-align: center;
+                text-decoration: none;
+                padding: 1rem 3.5rem;
+                color: black;
+            }
+            nav.navbar > ul > li.selected {
+                background-color: var(--select-color);
+            }

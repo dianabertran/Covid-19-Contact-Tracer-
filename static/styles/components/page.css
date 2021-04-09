@@ -1,0 +1,26 @@
+﻿.page-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 5rem minmax(0, 2fr);
+    grid-template-areas:
+        'heading heading'
+        'nav content';
+}
+
+    .page-container > main {
+        padding: 0 3rem;
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+
+    .page-container > .heading-container {
+        grid-area: heading;
+    }
+
+    .page-container > .navbar {
+        grid-area: nav;
+    }
